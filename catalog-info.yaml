@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ parameters.repoName | dump }}
+  description: ${{ parameters.description | dump }}
+  links:
+    - title: GitHub
+      url: https://github.com/organization/${{ parameters.repoName | dump }}
+      icon: github
+  annotations:
+    github.com/project-slug: organization/${{ parameters.repoName | dump }}
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: ${{ parameters.team | dump }}
