@@ -1,16 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{ values.name | dump }}
-  description: ${{ parameters.description | dump }}
+  name: ${{ values.name }}
+  description: ${{ parameters.description }}
   links:
     - title: GitHub
-      url: https://github.com/RafaelTriani/${{ values.name | dump }}
+      url: https://github.com/RafaelTriani/${{ values.name }}
       icon: github
   annotations:
-    github.com/project-slug: ${{ parameters.githubUser }}/${{ values.name | dump }}
+    github.com/project-slug: ${{ parameters.githubUser }}/${{ values.name }}
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: production
-  owner: ${{ parameters.githubUser | dump }}
+  owner: ${{ parameters.githubUser }}
