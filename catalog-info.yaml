@@ -5,10 +5,10 @@ metadata:
   description: ${{ parameters.description | dump }}
   links:
     - title: GitHub
-      url: https://github.com/organization/${{ parameters.repoName | dump }}
+      url: https://github.com/RafaelTriani/${{ parameters.repoName | dump }}
       icon: github
   annotations:
-    github.com/project-slug: organization/${{ parameters.repoName | dump }}
+    github.com/project-slug: RafaelTriani/${{ parameters.repoName | dump }}
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
