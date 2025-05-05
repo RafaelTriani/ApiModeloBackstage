@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name }}
-  description: ${{ parameters.description }}
+  description: ${{ values.description }}
   links:
     - title: GitHub
       url: https://github.com/RafaelTriani/${{ values.name }}
